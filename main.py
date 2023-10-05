@@ -8,14 +8,13 @@ import json
 load_dotenv()
 
 bottoken=os.getenv('TOKEN')
-afile=os.getenv('file')
+afile=os.getenv('channel')
 
 def getServerPrefix(client, message):
     with open(afile,'r') as f:
         prefix = json.load(f)
 
     return prefix[str(message.guild.id)]
-
 
 # commandprefix=os.getenv('BOTPREFIX')
 
@@ -48,8 +47,9 @@ client = commands.Bot(command_prefix=getServerPrefix, intents=discord.Intents.al
 
 @client.event
 async def on_ready():
+    await client.tree.sync()
     print("bot is ready and booming!")
-    await client.change_presence(activity=discord.Game(f"type {getServerPrefix}help for help"))
+    await client.change_presence(activity=discord.Game(f"type help command for help"))
 
 @client.event
 async def on_guild_join(guild):
