@@ -17,5 +17,8 @@ client.on("messageCreate", (message) => {
     });
   }
 });
+client.on("interactionCreate", (interaction) => {
+  interaction.reply("Pong!!");
+});
 
 client.login(process.env.TOKEN);
