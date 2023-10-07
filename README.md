@@ -5,27 +5,46 @@
 This is a rudimentary bot with plans for future feature enhancements as we progress.
 
 ## Features 
+**COMMANDS**
 
-- .help : This command offers a fundamental user guide containing a comprehensive list of valid commands.
+- `.help` : It used to provide users with information about the bot's commands and how to use them. This command is used to display a list of available commands or provide details about a specific command.
 ```sh
+LevelSystem:
+  level      
+  levelreset 
 Me:
-  me        
-  mem       
-Moderation:
-  ban       
-  clear     
-  kick      
-  unban     
+  me         
+  mem        
+Music:
+  join       
+  leave      
+  play       
 Ping:
-  ping      
+  ping       
 ​No Category:
-  help      Shows this message
-  setprefix 
+  help       Shows this message
+  setprefix  
 
 Type .help command for more info on a command.
 You can also type .help category for more info on a category.
 ```
 
+- `.level`: It is a command that allows users to check their or other users' levels within a leveling system. To implement a leveling system in your Discord bot, you'll need to track users' experience points (XP) and levels.
+  
+-  `.levelreset`: It is a command used to reset a user's level and experience points (XP) back to a certain starting point or zero.
+
+- `.me`: It allows users to view their own profile information or personal statistics within a server or community. This command can provide users with information about their username, avatar, roles, join date, or any other relevant data you want to display.
+
+- `.mem`: It used to provide users with information about the another member's  personal statistics within a server or community.
+
+- `.play`: It  is  used to make the bot join a voice channel and play audio, such as music or sound effects.
+
+- `.join`: It is used to make the bot join a voice channel in a Discord server. This command allows the bot to connect to a voice channel so that it can participate in voice-related activities, such as playing music, relaying audio, or responding to voice commands.
+
+- `.leave`: It is used to make the bot leave a voice channel in a Discord server. This command allows the bot to disconnect from a voice channel when it's no longer needed.
+
+- `.ping`: It is a common and simple command that allows you to measure the bot's latency or response time. Users can invoke the command, and the bot responds with the time it takes for a message to be sent and received.
+  
 
 ## Technology used
 
