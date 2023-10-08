@@ -23,7 +23,7 @@ Welcome to our Discord bot project! This bot is designed as a versatile tool wit
 
 
 ## Features 
-**COMMANDS**
+### COMMANDS
 - `.help` :Use this command to access information about the bot's available commands and how to use them. You can request a list of all commands or details about a specific command. Here's a sample output:
 ```sh
 LevelSystem:
@@ -78,9 +78,10 @@ You can also type .help category for more info on a category.
 
 ## Installation
 To get started with our Discord bot, follow these steps:
--  **Install Python** : Ensure you have Python installed on your system. You can download it from here [Python's official website](https://www.python.org/downloads/).
+### **Install Python** 
+ Ensure you have Python installed on your system. You can download it from here [Python's official website](https://www.python.org/downloads/).
 
-- **Install Dependencies**
+### **Install Dependencies**
   - Install the required Python packages using the following command:
 ```sh
 pip install discord.py
@@ -112,14 +113,14 @@ To use audio and video features in your Discord bot, you'll need to install FFmp
 ```sh
 ffmpeg -version
 ```   
-- **Create Files**
+### **Create Files**
  Create the necessary files for your bot, including main.py and .env (for environment variables): 
 
 ```sh
 touch main.py .env
 ```
 
-- **Set Up Environment Variables**
+### **Set Up Environment Variables**
 Open the .env file and define your environment variables. The most crucial variable is your Discord bot token:
 
 ```env
@@ -127,7 +128,7 @@ DISCORD_TOKEN=your_bot_token_here
 ```
 Replace `your_bot_token_here` with your actual Discord bot token.
 
-  - Load Environment Variables
+### **Load Environment Variables**
     Load the environment variables in your Python code using a library like `python-dotenv`. Make sure to install it:
     
 ```sh
@@ -144,7 +145,7 @@ load_dotenv()
 # Access environment variables
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 ```
-   - Bot Initialization
+###  **Bot Initialization**
 
      In your bot's code, use the DISCORD_TOKEN variable to authenticate your bot with Discord. Here's an example snippet:
      
