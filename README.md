@@ -147,7 +147,7 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 ```
 ###  **Bot Initialization**
 
-     In your bot's code, use the DISCORD_TOKEN variable to authenticate your bot with Discord. Here's an example snippet:
+In your bot's code, use the DISCORD_TOKEN variable to authenticate your bot with Discord. Here's an example snippet:
      
  ```py
      import discord
