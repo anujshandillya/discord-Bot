@@ -129,7 +129,7 @@ DISCORD_TOKEN=your_bot_token_here
 Replace `your_bot_token_here` with your actual Discord bot token.
 
 ### **Load Environment Variables**
-    Load the environment variables in your Python code using a library like `python-dotenv`. Make sure to install it:
+Load the environment variables in your Python code using a library like `python-dotenv`. Make sure to install it:
     
 ```sh
 pip install python-dotenv
